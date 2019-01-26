@@ -1,0 +1,599 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+	z-index:1030;
+	top:0;
+	left:0;
+	right:0;
+	width:100%;
+	height:60px;
+	background: #fff;
+	position:fixed;
+}
+
+.navbar-name {
+	font-family: "Times New Roman", Times, serif;
+	color:#FFF;
+    background-color: #0502A4;
+	font-size:18px;
+	line-height:50px;
+	float:left;
+    text-align: center;
+	margin-left:0px;
+	margin-top:0;
+    margin-bottom:0px;
+	padding-left:30px;
+    padding-top: 5px;
+    padding-right:30px;
+    padding-bottom: 5px;
+}
+
+@media screen and (min-width:873px){
+	.navbar {
+	   z-index:1030;
+	   top:0;
+	   left:0;
+	   right:0;
+	   width:100%;
+	   height:60px;
+	   background: #fff;
+	   position:fixed;
+    }
+}
+
+@media screen and (max-width:872px){
+	.navbar {
+	   z-index:1030;
+	   top:0;
+	   left:0;
+	   right:0;
+	   width:100%;
+	   height:120px;
+	   background: #fff;
+	   position:fixed;
+    }
+    
+    .navbar-ul {
+	   position: relative;
+	   margin-top: 2px;
+       text-align: center;
+        left: 20%;
+    }
+
+
+}
+
+.navbar-ul {
+	position:relative;
+	margin-top:2px;
+	float:left;
+}
+
+@media screen and (min-width:601px){
+    
+    .navbar-ul {
+	   position: relative;
+	   margin-top: 2px;
+       text-align: center;
+    }
+}
+
+@media screen and (max-width:600px){
+    
+    .navbar-ul {
+	   position: relative;
+	   margin-top: 2px;
+       text-align: center;
+        left: -60px;
+        width: 500px;
+    }
+
+
+}
+
+nav ul li {
+	float:left;
+	list-style:none;
+	position: relative;
+	margin:0;
+}
+
+nav ul li a {
+	margin:0;
+	text-decoration:none;
+	display:block;
+	font-family: "Times New Roman", Times, serif;
+	color:#000;
+	line-height:15px;
+	font-size:22px;
+	padding:20px 20px;
+}
+
+nav ul li a:hover{
+	padding:20px 22px;
+	background:#0502A4;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.twitter {
+	padding-bottom:20px;
+	padding-left:20px;
+	padding-top:10px;
+	padding-right:20px;
+	float:right;
+}
+
+.facebook {
+	padding: 10px 20px;
+	float:right;
+}
+
+.instagram {
+    padding-bottom: 10px;
+	padding-top: 5px;
+	padding-right:10px;
+	float:right;
+}
+
+
+.backdrop {
+	position:absolute;
+	height: 500px;
+	width: 100%;
+	padding:0;
+	margin-top:60px;
+	top:0;
+	bottom:0; 
+	left:0;
+	right:0;
+}
+
+.prin {
+    margin:0;
+    padding:0;
+	left: 50%;
+	top: 65%;
+    color: #fff;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	text-align: center;
+    width: 100%;
+}
+
+.slider {
+    background: repeat fixed;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 700px;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	animation: slider 20s infinite ;
+    -webkit-animation: slider 20s infinite ;
+}
+
+@-webkit-keyframes slider {
+	
+	0%{
+        background-image: url(../luxuryimg/Car.jpg);
+	}
+	20%{
+		background-image: url(../luxuryimg/Car.jpg);
+	}
+	25%{
+		background-image: url(../luxuryimg/cartwo.jpg);
+	}
+	45%{
+		background-image: url(../luxuryimg/cartwo.jpg);
+	}
+	50%{
+		background-image: url(../luxuryimg/carthree.jpg);
+	}
+	70%{
+		background-image: url(../luxuryimg/carthree.jpg);
+	}
+	75%{
+		background-image: url(../luxuryimg/carfour.jpg);
+	}
+	95%{
+		background-image: url(../luxuryimg/carfour.jpg);
+	}
+	100%{
+		background-image: url(../luxuryimg/Car.jpg);
+	}
+}
+
+@keyframes slider {
+	
+	0%{
+        background-image: url(../luxuryimg/Car.jpg);
+	}
+	20%{
+		background-image: url(../luxuryimg/Car.jpg);
+	}
+	25%{
+		background-image: url(../luxuryimg/cartwo.jpg);
+	}
+	45%{
+		background-image: url(../luxuryimg/cartwo.jpg);
+	}
+	50%{
+		background-image: url(../luxuryimg/carthree.jpg);
+	}
+	70%{
+		background-image: url(../luxuryimg/carthree.jpg);
+	}
+	75%{
+		background-image: url(../luxuryimg/carfour.jpg);
+	}
+	95%{
+		background-image: url(../luxuryimg/carfour.jpg);
+	}
+	100%{
+		background-image: url(../luxuryimg/Car.jpg);
+	}
+}
+
+@media screen and (min-width:871px){
+	.title {
+		font-size: 60px;
+	}
+}
+
+@media screen and (max-width:870px){
+	.title {
+		font-size: 40px;
+	}
+}
+
+.title {
+	margin-top:60px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Merriweather", sans-serif;
+	text-align:center;
+    width: auto;
+    height: auto;
+}
+
+
+@media screen and (min-width:601px){
+	.title {
+    }
+}
+
+@media screen and (max-width:600px){
+	.title {
+		margin-top:130px;
+        width: 400px;
+    }
+}
+
+.subtitle {
+	margin-top:100px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+	text-align:center;
+}
+
+.bod {
+    margin-top:-40px;   
+}
+
+
+
+hr {
+    position: relative;
+    z-index: 2;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.spacer {
+    top: -30px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 20px;
+    background-color: #0502A4;
+}
+
+.top {
+    top: 100px;
+    position: relative;
+    margin-left: 21%;
+    padding-bottom: 10px;
+    width: 60%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    
+}
+
+.header {
+    position: relative;
+    top: 15px;
+	text-align: center;
+    font-size: 45px;
+    font-family: "Playfair Display", serif; 
+    color: #fff;
+}
+
+.distance {
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 23px;
+}
+
+#map{
+    margin-left:21%;
+    top: 150px;
+    position: relative;
+    width: 60%;
+	max-width: 100%;
+	height: 350px;
+}
+
+#info_div {
+    color: #fff;
+    font-family: "Playfair Display", serif; 
+    background: rgba(0, 0, 0, 0.6);
+    animation: all 4s ease-in-out;
+    text-align: center;
+    position: relative;
+    top: 200px;
+    left: 38%;
+    font-size: 30px;
+    width: 320px;
+    border-radius: 45px;
+}
+
+@media screen and (min-width:901px){
+	#info_div {
+		left: 38%;
+	}
+}
+
+@media screen and (max-width:900px){
+	#info_div {
+		left: 28%;
+	}
+}
+
+@media screen and (min-width:501px){
+	#info_div {
+	}
+}
+
+@media screen and (max-width:500px){
+	#info_div {
+		left: 13%;
+	}
+}
+
+
+
+.search {
+    top: -65px;
+    bottom: 0px;
+    position: relative;
+    background-image: url(../luxuryimg/carfive.jpg);
+    width: 100%;
+    height: 1000px;
+}
+
+@media screen and (min-width:1301px){
+	.search {
+		height: 1000px;
+	}
+}
+
+@media screen and (max-width:1300px){
+	.search {
+		height: 1050px;
+	}
+}
+
+@media screen and (min-width:1251px){
+	.search {
+	}
+}
+
+@media screen and (max-width:1250px){
+	.search {
+		height: 1100px;
+	}
+}
+
+@media screen and (min-width:1101px){
+	.search {
+	}
+}
+
+@media screen and (max-width:1100px){
+	.search {
+		height: 1150px;
+	}
+}
+
+@media screen and (min-width:801px){
+	.search {
+	}
+}
+
+@media screen and (max-width:800px){
+	.search {
+		height: 1200px;
+	}
+}
+
+.fav {
+	text-align: center;
+    font-size: 45px;
+    font-family: "Playfair Display", serif; 
+}
+
+@media screen and (min-width:601px){
+	.text {
+		width: 550px;
+	}
+}
+
+@media screen and (max-width:600px){
+	.text {
+		width: auto;
+	}
+}
+
+.text {
+	margin:auto;
+	margin-bottom:40px;
+	font-size:16px;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align:center;
+}
+
+.foothr {
+    position: relative;
+    bottom: -10px;
+}
+
+.twitterfoot {
+    margin-top: 10px;
+	padding-bottom:20px;
+	padding-left:20px;
+	padding-top:10px;
+	padding-right:20px;
+	float:left;
+}
+
+.facebookfoot {
+    margin-top: 10px;
+	padding: 10px 20px;
+	float:left;
+}
+
+.instagramfoot {
+    margin-top: 10px;
+    padding-bottom: 10px;
+	padding-top: 5px;
+	padding-left:10px;
+	float:left;
+}
+
+@media screen and (min-width:601px){
+	.twitterfoot {
+    margin-top: 10px;
+	padding-bottom:20px;
+	padding-left:20px;
+	padding-top:10px;
+	padding-right:20px;
+	float:left;
+}
+
+.facebookfoot {
+    margin-top: 10px;
+	padding: 10px 20px;
+	float:left;
+}
+
+.instagramfoot {
+    margin-top: 10px;
+    padding-bottom: 10px;
+	padding-top: 5px;
+	padding-left:10px;
+	float:left;
+}
+}
+
+@media screen and (max-width:600px){
+	.twitterfoot {
+    margin-top: 10px;
+	padding-bottom:20px;
+	padding-left:0px;
+	padding-top:10px;
+	padding-right:5px;
+	float:left;
+}
+
+.facebookfoot {
+    margin-top: 10px;
+	padding: 10px 5px;
+	float:left;
+}
+
+.instagramfoot {
+    margin-top: 10px;
+    padding-bottom: 10px;
+	padding-top: 5px;
+	padding-left:0px;
+	float:left;
+}
+}
+
+.luxury {
+    overflow: hidden;
+    background-color: #0502A4;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 41%;
+    position: absolute;
+	color: #fff;
+    width: 15%;
+    font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width:601px){
+	.luxury {
+	}
+}
+
+@media screen and (max-width:600px){
+	.luxury {
+		margin-left: 37%;
+	}
+}
+
+.simple {
+    margin-top: 20px;
+    margin-left:90%;
+    position: absolute;
+	color: #000;
+    width: 8%;
+    font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width:1001px){
+	.simple {
+	}
+}
+
+@media screen and (max-width:1000px){
+	.simple {
+		margin-left: 74%;
+	}
+}
+
+
+.foot {
+    padding: 5px;
+    height: 70px;
+    
+}

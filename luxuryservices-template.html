@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+	<link rel="stylesheet" type="text/css" href="luxuryservices-css-template.css">
+	<meta charset="utf-8">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1">
+	<title>Luxury Services</title>	
+    <link rel="icon" type="image/jpg" href="../luxuryimg/luxuryicon.jpg"/>
+	
+</head>
+
+<body>
+	<nav class="navbar">
+	
+	<p class= "navbar-name">Luxury Services</p>
+	<a class="twitter" href="https://twitter.com/lsadmobile" target="_blank">
+	<img src="../luxuryimg/twitter.png" alt="Twitter" style="width:35px; height:35px;">
+	</a>
+	<a class="facebook" href="https://www.facebook.com/ServicesLuxury/" target="_blank">
+	<img src="../luxuryimg/facebook.png" alt="Facebook" style="width:35px; height:35px;">
+	</a>
+	<a class="instagram" href="https://www.instagram.com/lsautomotivedetailing/" target="_blank">
+	<img src="../luxuryimg/instagram.jpg" alt="Instagram" style="width:50px; height:50px;">
+	</a>
+	<ul class="navbar-ul">
+		<li><a href="luxuryservices-template.html">Home</a></li>
+		<li><a href="luxuryservices-services.html">Services</a></li>
+		<li><a href="luxuryservices-aboutus.html">About Us</a></li>
+		<li><a href="luxuryservices-contact.html">Contact Us</a></li>
+	</ul>
+	
+	</nav>
+	<div class="slider">
+			<div class="backdrop" >
+				<div class="prin">
+					<h1 class="title">
+						CREATING A HIGHER STANDARD
+					</h1> 
+					<p class="subtitle">Come to us for full quality detailing!</p>
+				</div>
+			</div>
+	</div>
+        <div class="spacer">
+            <hr>
+        </div>
+    <div class="bod">
+        <div class="search">
+            <div class="top">
+	<p class="header">Find out now if we are in your area!</p>
+                <p class="distance"> We can travel anywhere up to 100 miles for your car detailing expirence!</p>
+                <i>If you're more than 30 miles away we require a 2 car minimum due to costs of traveling.</i>
+            </div>    
+<div id="map"></div>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdIKTSCWnHFqG5xpxqjiJVezXMQJbSpiM&callback=initMap"></script>
+<script>
+function initMap() {
+	var myMapCenter = {lat: 33.1192875, lng: -97.0255641 };
+
+	var map = new google.maps.Map(document.getElementById('map'), {
+		center: myMapCenter,
+		zoom: 14
+        });
+    
+    var stores = [
+	{
+		name: 'Luxury Services',
+		location: {lat: 33.1192875, lng: -97.0255641},
+		hours: '8AM to 10PM',
+        days: 'Saturday & Sunday'
+    }
+];
+    
+	function markStore(storeInfo){
+
+	var marker = new google.maps.Marker({
+		map: map,
+		position: storeInfo.location,
+		title: storeInfo.name
+	});
+
+	marker.addListener('click', function(){
+		showStoreInfo(storeInfo);
+	});
+}
+
+function showStoreInfo(storeInfo){
+	var info_div = document.getElementById('info_div');
+	info_div.innerHTML = 
+		storeInfo.name
+		+ '<br><br>Hours: <br>' + storeInfo.hours
+        + '<br><br>Days: <br>' + storeInfo.days;
+}
+    
+    stores.forEach(function(store){
+	markStore(store);
+});
+    
+}
+</script>
+    
+    <div id="info_div"></div>
+	</div>
+	<p class="fav">Making your ride look newer everytime!</p>
+        <br>
+	<p class="text">Explaining what it is<br>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a nunc semper, iaculis libero et, 
+	eleifend sem. Ut pharetra volutpat molestie. Nunc lacinia dapibus nisi vel maximus. Proin non semper metus, 
+	eget sodales tellus. Maecenas non fermentum tellus. Aliquam quis efficitur magna. Praesent sit amet aliquam 
+	erat, at cursus justo. Integer iaculis lectus diam, eu porttitor neque malesuada ac. 
+	Duis in nisl eu nunc faucibus fringilla. Nunc ultricies neque vel faucibus accumsan. Aenean at sem augue.</p>
+	<br>
+	<p class="fav">Positive of getting a car detail!</p>
+        <br>
+	<p class="text">why they need it<br>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a nunc semper, iaculis libero et, 
+	eleifend sem. Ut pharetra volutpat molestie. Nunc lacinia dapibus nisi vel maximus. Proin non semper metus, 
+	eget sodales tellus. Maecenas non fermentum tellus. Aliquam quis efficitur magna. Praesent sit amet aliquam 
+	erat, at cursus justo. Integer iaculis lectus diam, eu porttitor neque malesuada ac. 
+	Duis in nisl eu nunc faucibus fringilla. Nunc ultricies neque vel faucibus accumsan. Aenean at sem augue.</p>
+        <br>
+        <p class="fav">Why choose us?</p>
+        <br>
+	<p class="text">Explaining why<br>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a nunc semper, iaculis libero et, 
+	eleifend sem. Ut pharetra volutpat molestie. Nunc lacinia dapibus nisi vel maximus. Proin non semper metus, 
+	eget sodales tellus. Maecenas non fermentum tellus. Aliquam quis efficitur magna. Praesent sit amet aliquam 
+	erat, at cursus justo. Integer iaculis lectus diam, eu porttitor neque malesuada ac. 
+	Duis in nisl eu nunc faucibus fringilla. Nunc ultricies neque vel faucibus accumsan. Aenean at sem augue.</p>
+	<br>
+	<hr class="foothr">
+    </div>
+        <div class="foot">
+            
+	<a class="twitterfoot" href="https://twitter.com/lsadmobile" target="_blank">
+	<img src="../luxuryimg/twitter.png" alt="Twitter" style="width:35px; height:35px;">
+	</a>
+	<a class="facebookfoot" href="https://www.facebook.com/ServicesLuxury/" target="_blank">
+	<img src="../luxuryimg/facebook.png" alt="Facebook" style="width:35px; height:35px;">
+	</a>
+	<a class="instagramfoot" href="https://www.instagram.com/lsautomotivedetailing/" target="_blank">
+	<img src="../luxuryimg/instagram.jpg" alt="Instagram" style="width:50px; height:50px;">
+	</a>
+        <p class="luxury">Luxury Services</p>
+		<p class="simple">Created by YourSimplicity</p>
+	
+    </div>
+</body>
+</html>
